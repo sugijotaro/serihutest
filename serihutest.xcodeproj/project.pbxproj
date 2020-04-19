@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AB54F292449D6F300B001BC /* nakano1.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0AB54F282449D6F300B001BC /* nakano1.csv */; };
+		0AB54F2B244AB2D300B001BC /* NormalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB54F2A244AB2D200B001BC /* NormalView.swift */; };
+		0AB54F2D244AB2E300B001BC /* NormalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AB54F2C244AB2E300B001BC /* NormalView.xib */; };
+		0AB54F2F244AB54F00B001BC /* MessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AB54F2E244AB54F00B001BC /* MessageView.xib */; };
+		0AB54F31244AB55F00B001BC /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB54F30244AB55F00B001BC /* MessageView.swift */; };
+		0AB54F33244AB63E00B001BC /* 名称未設定11.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AB54F32244AB63E00B001BC /* 名称未設定11.png */; };
+		0AB54F35244AC79000B001BC /* QuestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AB54F34244AC79000B001BC /* QuestionView.xib */; };
+		0AB54F37244AC7A000B001BC /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB54F36244AC7A000B001BC /* QuestionView.swift */; };
 		0AF5FF032446F93600B42214 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF5FF022446F93600B42214 /* AppDelegate.swift */; };
 		0AF5FF052446F93600B42214 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF5FF042446F93600B42214 /* SceneDelegate.swift */; };
 		0AF5FF072446F93600B42214 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF5FF062446F93600B42214 /* ViewController.swift */; };
@@ -15,6 +23,8 @@
 		0AF5FF0F2446F93B00B42214 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF5FF0D2446F93B00B42214 /* LaunchScreen.storyboard */; };
 		0AF5FF1A2446F93C00B42214 /* serihutestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF5FF192446F93C00B42214 /* serihutestTests.swift */; };
 		0AF5FF252446F93C00B42214 /* serihutestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF5FF242446F93C00B42214 /* serihutestUITests.swift */; };
+		0AF5FF332446FB3700B42214 /* 名称未設定.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AF5FF322446FB3700B42214 /* 名称未設定.png */; };
+		0AF5FF35244700C900B42214 /* button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF5FF34244700C800B42214 /* button.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +45,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AB54F282449D6F300B001BC /* nakano1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = nakano1.csv; path = ../../../../Downloads/nakano1.csv; sourceTree = "<group>"; };
+		0AB54F2A244AB2D200B001BC /* NormalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalView.swift; sourceTree = "<group>"; };
+		0AB54F2C244AB2E300B001BC /* NormalView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NormalView.xib; sourceTree = "<group>"; };
+		0AB54F2E244AB54F00B001BC /* MessageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageView.xib; sourceTree = "<group>"; };
+		0AB54F30244AB55F00B001BC /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		0AB54F32244AB63E00B001BC /* 名称未設定11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "名称未設定11.png"; sourceTree = "<group>"; };
+		0AB54F34244AC79000B001BC /* QuestionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionView.xib; sourceTree = "<group>"; };
+		0AB54F36244AC7A000B001BC /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		0AF5FEFF2446F93600B42214 /* serihutest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = serihutest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF5FF022446F93600B42214 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AF5FF042446F93600B42214 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +67,8 @@
 		0AF5FF202446F93C00B42214 /* serihutestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = serihutestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF5FF242446F93C00B42214 /* serihutestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = serihutestUITests.swift; sourceTree = "<group>"; };
 		0AF5FF262446F93C00B42214 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AF5FF322446FB3700B42214 /* 名称未設定.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "名称未設定.png"; sourceTree = "<group>"; };
+		0AF5FF34244700C800B42214 /* button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = button.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +123,19 @@
 				0AF5FF042446F93600B42214 /* SceneDelegate.swift */,
 				0AF5FF062446F93600B42214 /* ViewController.swift */,
 				0AF5FF082446F93600B42214 /* Main.storyboard */,
+				0AB54F2C244AB2E300B001BC /* NormalView.xib */,
+				0AB54F2A244AB2D200B001BC /* NormalView.swift */,
+				0AB54F2E244AB54F00B001BC /* MessageView.xib */,
+				0AB54F30244AB55F00B001BC /* MessageView.swift */,
+				0AB54F34244AC79000B001BC /* QuestionView.xib */,
+				0AB54F36244AC7A000B001BC /* QuestionView.swift */,
 				0AF5FF0B2446F93B00B42214 /* Assets.xcassets */,
 				0AF5FF0D2446F93B00B42214 /* LaunchScreen.storyboard */,
 				0AF5FF102446F93B00B42214 /* Info.plist */,
+				0AF5FF322446FB3700B42214 /* 名称未設定.png */,
+				0AB54F32244AB63E00B001BC /* 名称未設定11.png */,
+				0AB54F282449D6F300B001BC /* nakano1.csv */,
+				0AF5FF34244700C800B42214 /* button.swift */,
 			);
 			path = serihutest;
 			sourceTree = "<group>";
@@ -232,9 +262,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AB54F35244AC79000B001BC /* QuestionView.xib in Resources */,
 				0AF5FF0F2446F93B00B42214 /* LaunchScreen.storyboard in Resources */,
 				0AF5FF0C2446F93B00B42214 /* Assets.xcassets in Resources */,
+				0AB54F292449D6F300B001BC /* nakano1.csv in Resources */,
+				0AB54F2F244AB54F00B001BC /* MessageView.xib in Resources */,
+				0AF5FF332446FB3700B42214 /* 名称未設定.png in Resources */,
 				0AF5FF0A2446F93600B42214 /* Main.storyboard in Resources */,
+				0AB54F33244AB63E00B001BC /* 名称未設定11.png in Resources */,
+				0AB54F2D244AB2E300B001BC /* NormalView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +297,11 @@
 			files = (
 				0AF5FF072446F93600B42214 /* ViewController.swift in Sources */,
 				0AF5FF032446F93600B42214 /* AppDelegate.swift in Sources */,
+				0AB54F2B244AB2D300B001BC /* NormalView.swift in Sources */,
 				0AF5FF052446F93600B42214 /* SceneDelegate.swift in Sources */,
+				0AB54F31244AB55F00B001BC /* MessageView.swift in Sources */,
+				0AB54F37244AC7A000B001BC /* QuestionView.swift in Sources */,
+				0AF5FF35244700C900B42214 /* button.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
