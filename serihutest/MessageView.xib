@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MessageView" customModule="serihutest" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="o3s-dU-TY4" customClass="MessageView" customModule="serihutest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="名称未設定11.png" translatesAutoresizingMaskIntoConstraints="NO" id="rc8-8M-eYC">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sqY-va-fJs">
+                    <rect key="frame" x="30" y="745" width="354" height="101"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="文字列文字列文字列文字列文字列文字列文字列文字列文字列文字列文字列文字列文字列文字列文字列文字列文字列文字列文字列文字列文字列" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAv-8t-G0n">
+                            <rect key="frame" x="111" y="10" width="223" height="71"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZf-LA-97d">
+                            <rect key="frame" x="329" y="74" width="20" height="22"/>
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <state key="normal" image="chevron.down.circle.fill" catalog="system"/>
+                            <connections>
+                                <action selector="touchedButton" destination="o3s-dU-TY4" eventType="touchUpInside" id="ctp-Ty-DHC"/>
+                            </connections>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bi2-zE-XDe">
+                            <rect key="frame" x="10" y="10" width="81" height="81"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="bi2-zE-XDe" secondAttribute="height" multiplier="1:1" id="G1F-OR-egr"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="EZf-LA-97d" secondAttribute="bottom" constant="5" id="19R-5J-RjG"/>
+                        <constraint firstAttribute="trailing" secondItem="BAv-8t-G0n" secondAttribute="trailing" constant="20" id="3az-ql-Pe7"/>
+                        <constraint firstItem="bi2-zE-XDe" firstAttribute="top" secondItem="sqY-va-fJs" secondAttribute="top" constant="10" id="6E7-J4-Cha"/>
+                        <constraint firstItem="BAv-8t-G0n" firstAttribute="top" secondItem="sqY-va-fJs" secondAttribute="top" constant="10" id="7MP-YN-ofY"/>
+                        <constraint firstItem="bi2-zE-XDe" firstAttribute="leading" secondItem="sqY-va-fJs" secondAttribute="leading" constant="10" id="ATu-z7-tW6"/>
+                        <constraint firstAttribute="trailing" secondItem="EZf-LA-97d" secondAttribute="trailing" constant="5" id="IBu-AE-mki"/>
+                        <constraint firstAttribute="width" secondItem="sqY-va-fJs" secondAttribute="height" multiplier="7:2" id="PmH-wv-Lbi"/>
+                        <constraint firstItem="BAv-8t-G0n" firstAttribute="leading" secondItem="bi2-zE-XDe" secondAttribute="trailing" constant="20" id="TK8-0E-KmY"/>
+                        <constraint firstAttribute="bottom" secondItem="BAv-8t-G0n" secondAttribute="bottom" constant="20" id="iyc-BZ-xk5"/>
+                        <constraint firstAttribute="bottom" secondItem="bi2-zE-XDe" secondAttribute="bottom" constant="10" id="uS4-Ar-M2I"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="部長" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DvF-1t-hDP">
+                    <rect key="frame" x="30" y="728" width="85" height="17"/>
+                    <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="DvF-1t-hDP" secondAttribute="height" multiplier="5:1" id="jXz-yb-2GJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="sqY-va-fJs" firstAttribute="top" secondItem="DvF-1t-hDP" secondAttribute="bottom" id="5LD-VT-zUn"/>
+                <constraint firstItem="CfC-Tk-Jc0" firstAttribute="bottom" secondItem="sqY-va-fJs" secondAttribute="bottom" constant="16" id="DF9-KI-zzb"/>
+                <constraint firstItem="sqY-va-fJs" firstAttribute="leading" secondItem="CfC-Tk-Jc0" secondAttribute="leading" constant="30" id="Hcc-HR-xF4"/>
+                <constraint firstItem="CfC-Tk-Jc0" firstAttribute="trailing" secondItem="sqY-va-fJs" secondAttribute="trailing" constant="30" id="Jgm-sf-Xwu"/>
+                <constraint firstItem="DvF-1t-hDP" firstAttribute="leading" secondItem="CfC-Tk-Jc0" secondAttribute="leading" constant="30" id="Q7l-C5-Bjw"/>
+                <constraint firstItem="sqY-va-fJs" firstAttribute="centerX" secondItem="o3s-dU-TY4" secondAttribute="centerX" id="Tw4-vE-gu0"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="CfC-Tk-Jc0"/>
+            <connections>
+                <outlet property="image" destination="bi2-zE-XDe" id="C4r-FD-h0i"/>
+                <outlet property="nameLabel" destination="DvF-1t-hDP" id="9px-bV-JlE"/>
+                <outlet property="textView" destination="BAv-8t-G0n" id="tyo-Wt-LQa"/>
+                <outlet property="textViewView" destination="sqY-va-fJs" id="TXK-pO-9ba"/>
+            </connections>
+            <point key="canvasLocation" x="-420.28985507246381" y="109.82142857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.down.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="名称未設定11.png" width="375" height="812"/>
+    </resources>
+</document>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuestionView" customModule="serihutest" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="E0z-MY-jJ7" customClass="QuestionView" customModule="serihutest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iv0-Lk-qLj">
+                    <rect key="frame" x="30" y="579.5" width="354" height="157"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="文字列文字列文字列文字列文字列文字列文字列文字列文字列文字列文字列文字列文字列文字列文字列文字列文字列文字列文字列文字列文字列" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6OB-cP-RDW">
+                            <rect key="frame" x="25" y="10" width="304" height="122"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3X-TL-CWE">
+                            <rect key="frame" x="319" y="120" width="20" height="22"/>
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <state key="normal" image="chevron.down.circle.fill" catalog="system"/>
+                            <connections>
+                                <action selector="touchedButton" destination="E0z-MY-jJ7" eventType="touchUpInside" id="qjP-Wd-Aep"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="d3X-TL-CWE" secondAttribute="bottom" constant="15" id="3KP-kq-wtC"/>
+                        <constraint firstAttribute="trailing" secondItem="6OB-cP-RDW" secondAttribute="trailing" constant="25" id="Jx4-MQ-byU"/>
+                        <constraint firstAttribute="width" secondItem="Iv0-Lk-qLj" secondAttribute="height" multiplier="9:4" id="X2O-6C-46q"/>
+                        <constraint firstAttribute="bottom" secondItem="6OB-cP-RDW" secondAttribute="bottom" constant="25" id="awb-4e-yxl"/>
+                        <constraint firstAttribute="trailing" secondItem="d3X-TL-CWE" secondAttribute="trailing" constant="15" id="f0h-Qv-wEW"/>
+                        <constraint firstItem="6OB-cP-RDW" firstAttribute="top" secondItem="Iv0-Lk-qLj" secondAttribute="top" constant="10" id="iGY-ZM-uhG"/>
+                        <constraint firstItem="6OB-cP-RDW" firstAttribute="leading" secondItem="Iv0-Lk-qLj" secondAttribute="leading" constant="25" id="x9e-VV-AfL"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oZ8-XM-xie">
+                    <rect key="frame" x="55" y="214.5" width="304" height="365"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="oZ8-XM-xie" secondAttribute="height" multiplier="5:6" id="gXu-fq-B6v"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="部長" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8O-KD-6LX">
+                    <rect key="frame" x="30" y="562.5" width="85" height="17"/>
+                    <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="H8O-KD-6LX" secondAttribute="height" multiplier="5:1" id="LWU-BW-rRZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Z8C-CK-jna">
+                    <rect key="frame" x="115" y="379.5" width="269" height="200"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="614-Xf-11d"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="SVx-Yy-nxe" firstAttribute="trailing" secondItem="Z8C-CK-jna" secondAttribute="trailing" constant="30" id="EJC-eO-UPc"/>
+                <constraint firstItem="Iv0-Lk-qLj" firstAttribute="leading" secondItem="SVx-Yy-nxe" secondAttribute="leading" constant="30" id="GFc-8l-Qcl"/>
+                <constraint firstItem="Iv0-Lk-qLj" firstAttribute="top" secondItem="H8O-KD-6LX" secondAttribute="bottom" id="MvV-zq-hEs"/>
+                <constraint firstItem="H8O-KD-6LX" firstAttribute="leading" secondItem="SVx-Yy-nxe" secondAttribute="leading" constant="30" id="Qf6-3a-unz"/>
+                <constraint firstItem="SVx-Yy-nxe" firstAttribute="trailing" secondItem="oZ8-XM-xie" secondAttribute="trailing" constant="55" id="QhV-Je-xDf"/>
+                <constraint firstItem="Iv0-Lk-qLj" firstAttribute="top" secondItem="Z8C-CK-jna" secondAttribute="bottom" id="beD-uc-xYk"/>
+                <constraint firstItem="Z8C-CK-jna" firstAttribute="leading" secondItem="H8O-KD-6LX" secondAttribute="trailing" id="e3u-ma-hWm"/>
+                <constraint firstItem="Iv0-Lk-qLj" firstAttribute="centerY" secondItem="E0z-MY-jJ7" secondAttribute="centerY" constant="210" id="gNf-Y8-aRg"/>
+                <constraint firstItem="oZ8-XM-xie" firstAttribute="leading" secondItem="SVx-Yy-nxe" secondAttribute="leading" constant="55" id="l0B-EI-d8i"/>
+                <constraint firstItem="Iv0-Lk-qLj" firstAttribute="centerX" secondItem="E0z-MY-jJ7" secondAttribute="centerX" id="qD2-al-PPe"/>
+                <constraint firstItem="SVx-Yy-nxe" firstAttribute="trailing" secondItem="Iv0-Lk-qLj" secondAttribute="trailing" constant="30" id="qTE-9E-tJ9"/>
+                <constraint firstItem="Iv0-Lk-qLj" firstAttribute="top" secondItem="oZ8-XM-xie" secondAttribute="bottom" id="zc9-qk-fpx"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SVx-Yy-nxe"/>
+            <connections>
+                <outlet property="image" destination="oZ8-XM-xie" id="Xvw-B4-WUg"/>
+                <outlet property="nameLabel" destination="H8O-KD-6LX" id="JTi-gE-BD0"/>
+                <outlet property="tableHeight" destination="614-Xf-11d" id="3Mf-Uv-iaK"/>
+                <outlet property="tableView" destination="Z8C-CK-jna" id="Qn7-dj-Cnl"/>
+                <outlet property="textView" destination="6OB-cP-RDW" id="ZbI-ur-gtR"/>
+                <outlet property="textViewView" destination="Iv0-Lk-qLj" id="Jeg-Mk-wBN"/>
+            </connections>
+            <point key="canvasLocation" x="-420.28985507246381" y="109.82142857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.down.circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
+</document>

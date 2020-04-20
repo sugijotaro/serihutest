@@ -12,7 +12,7 @@ protocol QuestionViewDelegate: class {
     func questionViewTouched()
 }
 
-class QuestionView: UIView /*, UITableViewDelegate, UITableViewDataSource*/ {
+class QuestionView: UIView {
 
     @IBOutlet var nameLabel :UILabel!
     @IBOutlet var textView :UITextView!
@@ -21,7 +21,11 @@ class QuestionView: UIView /*, UITableViewDelegate, UITableViewDataSource*/ {
     @IBOutlet var tableView :UITableView!
     @IBOutlet var tableHeight: NSLayoutConstraint!
     
-    var array:[String] = []
+    var array:[String] = []{
+        didSet{
+            tableView.reloadData()
+        }
+    }
     
     weak var delegate: QuestionViewDelegate?
     
@@ -34,7 +38,7 @@ class QuestionView: UIView /*, UITableViewDelegate, UITableViewDataSource*/ {
         super.init(frame: frame)
     //        self.nibInit()
     }
-           
+    
     // ストーリーボードで配置した時の初期化処理
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -48,13 +52,12 @@ class QuestionView: UIView /*, UITableViewDelegate, UITableViewDataSource*/ {
         tableView.isScrollEnabled = false
         tableView.rowHeight = 45
         tableHeight.constant = CGFloat(45 * array.count)
-//        tableHeight.constant = tableView.contentSize.height
     }
-
     
 }
 
 extension QuestionView: UITableViewDataSource, UITableViewDelegate {
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return array.count
@@ -67,7 +70,6 @@ extension QuestionView: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         tableView.deselectRow(at: indexPath, animated: true)
         
         print(indexPath.row)
