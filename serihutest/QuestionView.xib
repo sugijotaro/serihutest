@@ -23,22 +23,12 @@
                             <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                         </textView>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3X-TL-CWE">
-                            <rect key="frame" x="319" y="120" width="20" height="22"/>
-                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                            <state key="normal" image="chevron.down.circle.fill" catalog="system"/>
-                            <connections>
-                                <action selector="touchedButton" destination="E0z-MY-jJ7" eventType="touchUpInside" id="qjP-Wd-Aep"/>
-                            </connections>
-                        </button>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
-                        <constraint firstAttribute="bottom" secondItem="d3X-TL-CWE" secondAttribute="bottom" constant="15" id="3KP-kq-wtC"/>
                         <constraint firstAttribute="trailing" secondItem="6OB-cP-RDW" secondAttribute="trailing" constant="25" id="Jx4-MQ-byU"/>
                         <constraint firstAttribute="width" secondItem="Iv0-Lk-qLj" secondAttribute="height" multiplier="9:4" id="X2O-6C-46q"/>
                         <constraint firstAttribute="bottom" secondItem="6OB-cP-RDW" secondAttribute="bottom" constant="25" id="awb-4e-yxl"/>
-                        <constraint firstAttribute="trailing" secondItem="d3X-TL-CWE" secondAttribute="trailing" constant="15" id="f0h-Qv-wEW"/>
                         <constraint firstItem="6OB-cP-RDW" firstAttribute="top" secondItem="Iv0-Lk-qLj" secondAttribute="top" constant="10" id="iGY-ZM-uhG"/>
                         <constraint firstItem="6OB-cP-RDW" firstAttribute="leading" secondItem="Iv0-Lk-qLj" secondAttribute="leading" constant="25" id="x9e-VV-AfL"/>
                     </constraints>
@@ -103,7 +93,6 @@
                     </userDefinedRuntimeAttributes>
                 </tableView>
             </subviews>
-            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstItem="SVx-Yy-nxe" firstAttribute="trailing" secondItem="Z8C-CK-jna" secondAttribute="trailing" constant="30" id="EJC-eO-UPc"/>
                 <constraint firstItem="Iv0-Lk-qLj" firstAttribute="leading" secondItem="SVx-Yy-nxe" secondAttribute="leading" constant="30" id="GFc-8l-Qcl"/>
@@ -130,7 +119,4 @@
             <point key="canvasLocation" x="-420.28985507246381" y="109.82142857142857"/>
         </view>
     </objects>
-    <resources>
-        <image name="chevron.down.circle.fill" catalog="system" width="128" height="121"/>
-    </resources>
 </document>

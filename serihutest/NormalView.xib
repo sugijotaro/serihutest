@@ -82,7 +82,6 @@
                     </userDefinedRuntimeAttributes>
                 </label>
             </subviews>
-            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstItem="Hci-Xj-aSG" firstAttribute="trailing" secondItem="X65-Ca-AWZ" secondAttribute="trailing" constant="30" id="4w0-bd-jFS"/>
                 <constraint firstItem="X65-Ca-AWZ" firstAttribute="top" secondItem="AoS-UP-iRF" secondAttribute="bottom" id="NGY-zj-aKN"/>
@@ -101,7 +100,7 @@
                 <outlet property="textView" destination="1Zd-aJ-AO0" id="yKi-LI-KjF"/>
                 <outlet property="textViewView" destination="X65-Ca-AWZ" id="2y0-LL-5eB"/>
             </connections>
-            <point key="canvasLocation" x="-420" y="110"/>
+            <point key="canvasLocation" x="-420.28985507246381" y="109.82142857142857"/>
         </view>
     </objects>
     <resources>

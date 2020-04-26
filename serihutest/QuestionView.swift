@@ -9,7 +9,7 @@
 import UIKit
 
 protocol QuestionViewDelegate: class {
-    func questionViewTouched()
+    func questionViewTouched(getNextId: String)
 }
 
 class QuestionView: UIView {
@@ -21,16 +21,17 @@ class QuestionView: UIView {
     @IBOutlet var tableView :UITableView!
     @IBOutlet var tableHeight: NSLayoutConstraint!
     
-    var array:[String] = []{
+    var array :[[String]] = [["選択肢1"],["nextId1"]]{
         didSet{
             tableView.reloadData()
+            tableHeight.constant = CGFloat(45 * array.count)
         }
     }
     
     weak var delegate: QuestionViewDelegate?
     
-    @IBAction func touchedButton() {
-        delegate?.questionViewTouched()
+    func touchedButton(getNextId: String) {
+        delegate?.questionViewTouched(getNextId: getNextId)
     }
 
     // コードから生成した時の初期化処理
@@ -51,10 +52,10 @@ class QuestionView: UIView {
         tableView.delegate = self
         tableView.isScrollEnabled = false
         tableView.rowHeight = 45
-        tableHeight.constant = CGFloat(45 * array.count)
     }
-    
 }
+
+
 
 extension QuestionView: UITableViewDataSource, UITableViewDelegate {
     
@@ -65,13 +66,13 @@ extension QuestionView: UITableViewDataSource, UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = array[indexPath.row]
+        cell.textLabel?.text = array[indexPath.row][0]
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
-        print(indexPath.row)
+        print(array[indexPath.row][1])
+        touchedButton(getNextId: array[indexPath.row][1])
     }
 }

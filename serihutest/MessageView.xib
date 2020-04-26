@@ -13,10 +13,6 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="名称未設定11.png" translatesAutoresizingMaskIntoConstraints="NO" id="rc8-8M-eYC">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sqY-va-fJs">
                     <rect key="frame" x="30" y="745" width="354" height="101"/>
                     <subviews>
@@ -89,7 +85,6 @@
                     </userDefinedRuntimeAttributes>
                 </label>
             </subviews>
-            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstItem="sqY-va-fJs" firstAttribute="top" secondItem="DvF-1t-hDP" secondAttribute="bottom" id="5LD-VT-zUn"/>
                 <constraint firstItem="CfC-Tk-Jc0" firstAttribute="bottom" secondItem="sqY-va-fJs" secondAttribute="bottom" constant="16" id="DF9-KI-zzb"/>
@@ -100,6 +95,7 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="CfC-Tk-Jc0"/>
             <connections>
+                <outlet property="button" destination="EZf-LA-97d" id="NqT-Fb-zPB"/>
                 <outlet property="image" destination="bi2-zE-XDe" id="C4r-FD-h0i"/>
                 <outlet property="nameLabel" destination="DvF-1t-hDP" id="9px-bV-JlE"/>
                 <outlet property="textView" destination="BAv-8t-G0n" id="tyo-Wt-LQa"/>
@@ -110,6 +106,5 @@
     </objects>
     <resources>
         <image name="chevron.down.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="名称未設定11.png" width="375" height="812"/>
     </resources>
 </document>

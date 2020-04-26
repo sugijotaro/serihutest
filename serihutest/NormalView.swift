@@ -39,6 +39,7 @@ class NormalView: UIView {
     
     override func awakeFromNib() {
         nameLabel.widthAnchor.constraint(equalTo: self.textViewView.widthAnchor, multiplier: 5/12).isActive = true
+        self.window?.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0)
     }
 
 }
